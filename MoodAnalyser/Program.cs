@@ -9,6 +9,7 @@
             string mood = Console.ReadLine();
             MoodAnalyser obj = new MoodAnalyser(mood);
             Console.WriteLine($"The user mood is {obj.analyseMood()}");
+           
         }
     }
 }

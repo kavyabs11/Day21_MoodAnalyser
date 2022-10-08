@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MoodAnalyser
 {
-   
-        public class MoodAnalyser
-        {
+
+    public class MoodAnalyser
+    {
         private string message;
         public MoodAnalyser() //default constructor
         {
@@ -19,12 +19,10 @@ namespace MoodAnalyser
         }
         public string analyseMood()
         {
-            if (this.message.Contains("sad"))
+            if (this.message.ToUpper().Contains("SAD"))
                 return "SAD";
             else
                 return "HAPPY";
         }
     }
-        }
-    
-
+}
